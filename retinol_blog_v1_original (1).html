@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Retinol: Giải Mã Hoạt Chất Vàng – Skincare Science</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0f0f0f;
+    --forest: #1e3a1e;
+    --forest-mid: #2d5a2d;
+    --forest-light: #4a7c4a;
+    --sage: #7a9e7a;
+    --sage-pale: #b8cdb8;
+    --cream: #f5f0e8;
+    --cream-warm: #ede6d6;
+    --cream-deep: #d4c8b0;
+    --white: #fdfcfa;
+    --text-dark: #1a1a1a;
+    --text-mid: #3d3d3d;
+    --text-light: #6b6b6b;
+    --gold: #8b6914;
+    --gold-light: #c49a3c;
+    --red-soft: #8b2a2a;
+    --border: rgba(30, 58, 30, 0.15);
+    --border-strong: rgba(30, 58, 30, 0.3);
+    --serif: 'Playfair Display', 'Georgia', serif;
+    --serif-body: 'Libre Baskerville', 'Georgia', serif;
+    --sans: 'DM Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--white);
+    color: var(--text-dark);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── TOP BAR ─── */
+  .top-bar {
+    background: var(--forest);
+    color: var(--cream-pale, #e8e0d0);
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 9px 24px;
+  }
+
+  /* ─── HEADER / NAV ─── */
+  header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 40px;
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .logo {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--forest);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+  }
+  .logo span {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    font-family: var(--sans);
+    font-weight: 500;
+    color: var(--text-light);
+    text-transform: uppercase;
+    margin-top: -2px;
+  }
+  nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  nav a {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-mid);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--forest); }
+  .nav-cta {
+    background: var(--forest);
+    color: var(--cream) !important;
+    padding: 9px 20px;
+    border-radius: 2px;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--forest-mid) !important; }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 100px 40px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: rgba(74, 124, 74, 0.15);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; left: -60px;
+    width: 350px; height: 350px;
+    border-radius: 50%;
+    background: rgba(184, 205, 184, 0.08);
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--sage-pale);
+    margin-bottom: 28px;
+  }
+  .hero-label::before {
+    content: '';
+    width: 28px; height: 1px;
+    background: var(--sage);
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 5vw, 54px);
+    font-weight: 700;
+    line-height: 1.18;
+    color: var(--cream);
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--sage-pale);
+  }
+  .hero-intro {
+    font-family: var(--serif-body);
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.7;
+    color: rgba(245, 240, 232, 0.82);
+    max-width: 680px;
+    border-left: 2px solid var(--sage);
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+  .hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .meta-label {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--sage);
+    font-weight: 500;
+  }
+  .meta-value {
+    font-size: 13px;
+    color: var(--cream);
+    font-weight: 400;
+  }
+  .meta-divider {
+    width: 1px;
+    height: 36px;
+    background: rgba(122, 158, 122, 0.4);
+  }
+
+  /* ─── READING PROGRESS ─── */
+  .progress-bar {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    height: 2px;
+    background: var(--forest-light);
+    width: 0%;
+    z-index: 99;
+    transition: width 0.1s linear;
+  }
+
+  /* ─── LAYOUT ─── */
+  .page-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 64px;
+    align-items: start;
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+  .main-content { min-width: 0; }
+
+  /* ─── SECTION TITLES ─── */
+  .section-number {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--forest-light);
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--forest);
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .section-rule {
+    width: 40px;
+    height: 2px;
+    background: var(--forest-light);
+    margin-bottom: 24px;
+  }
+  p { margin-bottom: 20px; color: var(--text-mid); line-height: 1.78; font-size: 15.5px; }
+  p strong { color: var(--text-dark); font-weight: 600; }
+
+  /* ─── ARTICLE SECTION ─── */
+  .article-section {
+    margin-bottom: 64px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid var(--border);
+  }
+  .article-section:last-child { border-bottom: none; }
+
+  /* ─── MECHANISM CARDS ─── */
+  .mechanism-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 28px 0;
+  }
+  .mech-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px 24px;
+    background: var(--cream);
+    border-left: 3px solid var(--forest);
+    border-radius: 0 4px 4px 0;
+  }
+  .mech-num {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    background: var(--forest);
+    color: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--serif);
+    margin-top: 2px;
+  }
+  .mech-content h4 {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--forest);
+    margin-bottom: 6px;
+    letter-spacing: 0.02em;
+  }
+  .mech-content p {
+    font-size: 14px;
+    color: var(--text-mid);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* ─── CHALLENGE BOX ─── */
+  .challenge-box {
+    background: var(--cream-warm);
+    border: 1px solid var(--cream-deep);
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin: 28px 0;
+  }
+  .challenge-box h4 {
+    font-family: var(--serif);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--forest);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .challenge-box h4::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--forest);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .challenge-list { list-style: none; }
+  .challenge-list li {
+    font-size: 14.5px;
+    color: var(--text-mid);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    line-height: 1.6;
+  }
+  .challenge-list li:last-child { border-bottom: none; }
+  .challenge-list li::before {
+    content: '→';
+    color: var(--forest-light);
+    font-size: 12px;
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+
+  /* ─── PRODUCT SPOTLIGHT ─── */
+  .product-spotlight {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 40px;
+    border-radius: 4px;
+    margin: 32px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .product-spotlight::before {
+    content: 'KIEHL\'S';
+    position: absolute;
+    top: 20px; right: 24px;
+    font-family: var(--serif);
+    font-size: 48px;
+    font-weight: 700;
+    color: rgba(184, 205, 184, 0.08);
+    letter-spacing: 0.1em;
+    line-height: 1;
+    pointer-events: none;
+  }
+  .product-badge {
+    display: inline-block;
+    background: var(--sage);
+    color: var(--forest);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+  .product-spotlight h3 {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+  .product-spotlight p {
+    color: rgba(245, 240, 232, 0.8);
+    font-size: 14.5px;
+    margin-bottom: 24px;
+  }
+  .ingredient-trio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .ingredient-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(122, 158, 122, 0.3);
+    border-radius: 4px;
+    padding: 18px 16px;
+    text-align: center;
+  }
+  .ingredient-icon {
+    width: 36px; height: 36px;
+    background: rgba(122, 158, 122, 0.2);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    color: var(--sage-pale);
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 600;
+  }
+  .ingredient-card h5 {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--cream);
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+  .ingredient-card p {
+    font-size: 12px;
+    color: rgba(245, 240, 232, 0.65);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* ─── RATING ─── */
+  .rating-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(122, 158, 122, 0.35);
+    border-radius: 4px;
+    margin-top: 24px;
+  }
+  .stars { font-size: 20px; color: var(--gold-light); letter-spacing: 2px; }
+  .rating-score {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1;
+  }
+  .rating-info small {
+    display: block;
+    font-size: 12px;
+    color: rgba(245, 240, 232, 0.6);
+    margin-top: 4px;
+  }
+
+  /* ─── JOURNEY TABLE ─── */
+  .journey-table-wrap { overflow-x: auto; margin: 28px 0; }
+  .journey-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .journey-table thead tr {
+    background: var(--forest);
+    color: var(--cream);
+  }
+  .journey-table th {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 14px 18px;
+    text-align: left;
+  }
+  .journey-table td {
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-mid);
+    vertical-align: top;
+    line-height: 1.6;
+  }
+  .journey-table tr:last-child td { border-bottom: none; }
+  .journey-table tr:nth-child(even) td { background: var(--cream); }
+  .week-badge {
+    display: inline-block;
+    background: var(--forest);
+    color: var(--cream);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  /* ─── COMPARISON TABLE ─── */
+  .comparison-table-wrap { overflow-x: auto; margin: 28px 0; }
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .comparison-table th {
+    background: var(--forest);
+    color: var(--cream);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 13px 16px;
+    text-align: left;
+  }
+  .comparison-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-mid);
+    line-height: 1.55;
+    vertical-align: middle;
+  }
+  .comparison-table tr:nth-child(even) td { background: var(--cream); }
+  .pill-low  { background: #e8f4e8; color: #1e5c1e; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+  .pill-mid  { background: #fff8e1; color: #7a5900; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+  .pill-high { background: #fce8e8; color: #8b1a1a; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+
+  /* ─── ROUTINE GRID ─── */
+  .routine-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 28px 0;
+  }
+  .routine-card {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .routine-header {
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+  }
+  .routine-am { background: var(--cream-warm); color: var(--gold); border-bottom: 1px solid var(--cream-deep); }
+  .routine-pm { background: var(--forest); color: var(--cream); border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .routine-steps { padding: 16px 20px; }
+  .routine-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: 13.5px;
+    color: var(--text-mid);
+    border-bottom: 1px solid var(--border);
+  }
+  .routine-step:last-child { border-bottom: none; }
+  .step-n {
+    flex-shrink: 0;
+    width: 22px; height: 22px;
+    background: var(--forest);
+    color: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 1px;
+  }
+  .step-n.gold { background: var(--gold); }
+  .step-highlight { color: var(--forest); font-weight: 600; }
+
+  /* ─── WARNING NOTE ─── */
+  .warning-note {
+    background: #fffbf0;
+    border: 1px solid #e8d68a;
+    border-left: 3px solid var(--gold);
+    border-radius: 0 4px 4px 0;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 1.65;
+  }
+
+  /* ─── INCOMPATIBILITY TABLE ─── */
+  .incompat-table-wrap { overflow-x: auto; margin: 28px 0; }
+  .incompat-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+  .incompat-table th {
+    background: var(--forest);
+    color: var(--cream);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 13px 16px;
+    text-align: left;
+  }
+  .incompat-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-mid);
+    line-height: 1.6;
+    vertical-align: top;
+  }
+  .incompat-table tr:nth-child(even) td { background: var(--cream); }
+  .x-mark { color: var(--red-soft); font-weight: 700; }
+  .tilde-mark { color: var(--gold); font-weight: 700; }
+
+  /* ─── FAQ ─── */
+  .faq-list { margin: 24px 0; }
+  .faq-item {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .faq-q {
+    background: var(--cream);
+    padding: 18px 24px;
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--forest);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+  .faq-q::after {
+    content: '+';
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--forest-light);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+  }
+  .faq-item.open .faq-q::after { transform: rotate(45deg); }
+  .faq-a {
+    display: none;
+    padding: 20px 24px;
+    font-size: 14.5px;
+    color: var(--text-mid);
+    line-height: 1.75;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+  }
+  .faq-item.open .faq-a { display: block; }
+
+  /* ─── CONCLUSION ─── */
+  .conclusion-block {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 40px 44px;
+    border-radius: 4px;
+  }
+  .conclusion-block blockquote {
+    font-family: var(--serif-body);
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.7;
+    color: rgba(245, 240, 232, 0.88);
+    border-left: 2px solid var(--sage);
+    padding-left: 20px;
+    margin-bottom: 28px;
+  }
+  .conclusion-block p {
+    color: rgba(245, 240, 232, 0.82);
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .conclusion-block p:last-child { margin-bottom: 0; }
+  .conclusion-block strong { color: var(--cream); }
+
+  /* ─── TAGS ─── */
+  .tags-wrap { margin-top: 40px; }
+  .tag-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 12px;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tag {
+    background: var(--cream);
+    color: var(--forest);
+    border: 1px solid var(--border-strong);
+    padding: 6px 14px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+  }
+  .tag:hover { background: var(--forest); color: var(--cream); }
+
+  /* ─── SIDEBAR ─── */
+  .sidebar { position: sticky; top: 96px; }
+  .sidebar-block {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .sidebar-header {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 14px 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .sidebar-body { padding: 16px 20px; background: var(--white); }
+  .toc-list { list-style: none; }
+  .toc-list li a {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--text-mid);
+    border-bottom: 1px solid var(--border);
+    transition: color 0.18s;
+    line-height: 1.45;
+  }
+  .toc-list li:last-child a { border-bottom: none; }
+  .toc-list li a:hover { color: var(--forest); }
+  .toc-n {
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--forest-light);
+    margin-top: 2px;
+    min-width: 16px;
+  }
+  /* Sidebar product card */
+  .sidebar-product {
+    background: var(--forest);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .sidebar-product-img {
+    background: linear-gradient(135deg, #2d5a2d 0%, #1e3a1e 100%);
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .product-visual {
+    width: 70px; height: 100px;
+    background: rgba(245, 240, 232, 0.12);
+    border: 1px solid rgba(184, 205, 184, 0.3);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .product-visual-text {
+    font-family: var(--serif);
+    font-size: 9px;
+    font-weight: 700;
+    color: rgba(245, 240, 232, 0.9);
+    letter-spacing: 0.08em;
+    text-align: center;
+    line-height: 1.3;
+    padding: 0 6px;
+  }
+  .product-visual-band {
+    width: 100%;
+    height: 1px;
+    background: rgba(184, 205, 184, 0.4);
+  }
+  .sidebar-product-body { padding: 20px; }
+  .sidebar-product-body h4 {
+    font-family: var(--serif);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .sidebar-product-body p {
+    font-size: 12px;
+    color: rgba(245, 240, 232, 0.65);
+    margin-bottom: 16px;
+    line-height: 1.55;
+  }
+  .sidebar-btn {
+    display: block;
+    width: 100%;
+    background: var(--cream);
+    color: var(--forest);
+    text-align: center;
+    padding: 11px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background 0.18s, color 0.18s;
+  }
+  .sidebar-btn:hover { background: var(--sage-pale); }
+  /* Quick facts */
+  .fact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    gap: 12px;
+  }
+  .fact-row:last-child { border-bottom: none; }
+  .fact-label { color: var(--text-light); font-size: 12px; }
+  .fact-value { color: var(--text-dark); font-weight: 500; text-align: right; }
+  .fact-value.green { color: var(--forest); }
+  .fact-value.stars-s { color: var(--gold); font-size: 13px; }
+
+  /* ─── CITATION ─── */
+  .citation-note {
+    margin-top: 20px;
+    padding: 14px 18px;
+    background: var(--cream);
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--text-light);
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 48px 40px 32px;
+    margin-top: 0;
+  }
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(122, 158, 122, 0.3);
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .footer-brand { max-width: 300px; }
+  .footer-brand h3 {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 10px;
+  }
+  .footer-brand p {
+    font-size: 13px;
+    color: rgba(245, 240, 232, 0.6);
+    line-height: 1.6;
+    margin: 0;
+  }
+  .footer-links h4 {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 14px;
+  }
+  .footer-links a {
+    display: block;
+    font-size: 13px;
+    color: rgba(245, 240, 232, 0.7);
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.18s;
+  }
+  .footer-links a:hover { color: var(--cream); }
+  .footer-bottom {
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-bottom p { font-size: 12px; color: rgba(245, 240, 232, 0.45); margin: 0; }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    .page-wrap { grid-template-columns: 1fr; gap: 40px; padding: 0 24px; padding-top: 48px; padding-bottom: 64px; }
+    .sidebar { position: static; }
+    .hero { padding: 64px 24px 52px; }
+    header { padding: 0 24px; }
+    nav { display: none; }
+    footer { padding: 40px 24px 28px; }
+    .routine-grid { grid-template-columns: 1fr; }
+    .ingredient-trio { grid-template-columns: 1fr; }
+  }
+
+  /* ─── SCROLL ANIMATION ─── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+  /* ─── AUTHOR BIO ─── */
+  .author-bio {
+    margin-top: 56px;
+    padding-top: 48px;
+    border-top: 2px solid var(--forest);
+  }
+  .author-bio-inner {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 32px 36px;
+  }
+  .author-bio-header {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+  .author-bio-avatar {
+    flex-shrink: 0;
+    width: 72px; height: 72px;
+    background: var(--forest);
+    color: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border: 3px solid var(--forest-light);
+  }
+  .author-bio-name {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--forest);
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+  }
+  .author-bio-title {
+    font-size: 13px;
+    color: var(--text-light);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+  .author-bio-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .bio-badge {
+    background: var(--forest);
+    color: var(--cream);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 4px 12px;
+    border-radius: 2px;
+  }
+  .bio-badge-outline {
+    background: transparent;
+    color: var(--forest);
+    border: 1px solid var(--forest-light);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding: 3px 11px;
+    border-radius: 2px;
+  }
+  .author-bio-divider {
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+    margin-bottom: 20px;
+  }
+  .author-bio-desc {
+    font-size: 14.5px;
+    color: var(--text-mid);
+    line-height: 1.78;
+    margin-bottom: 28px;
+  }
+  .author-bio-desc em { color: var(--forest); font-style: italic; }
+  .author-bio-stats {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 22px;
+  }
+  .bio-stat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 12px;
+    gap: 4px;
+  }
+  .bio-stat-num {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--forest);
+    line-height: 1;
+  }
+  .bio-stat-label {
+    font-size: 11px;
+    color: var(--text-light);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+  .bio-stat-divider {
+    width: 1px;
+    height: 48px;
+    background: var(--border);
+    flex-shrink: 0;
+  }
+  .author-bio-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  .bio-footer-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-light);
+  }
+  .bio-specialty {
+    background: var(--cream-warm);
+    color: var(--forest);
+    border: 1px solid var(--border-strong);
+    padding: 5px 13px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .logo-img {
+    height: 44px;
+    width: auto;
+    display: block;
+  }
+  .footer-logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
+    margin-bottom: 12px;
+    opacity: 0.92;
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="top-bar">Skincare Science &amp; Reviews · Tháng 3, 2026 · Cố vấn: Dr. Nguyễn Lan Anh, Da liễu</div>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <img src="data:image/png;base64,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" alt="Kiehl's" class="logo-img">
+    </a>
+    <nav>
+      <a href="#">Skincare</a>
+      <a href="#">Thành Phần</a>
+      <a href="#">Routine</a>
+      <a href="#">Kiehl's</a>
+      <a href="#" class="nav-cta">Shop Now</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-label">Skincare Science & Reviews</div>
+    <h1>Review Retinol: Giải Mã<br><em>"Hoạt Chất Vàng"</em><br>Chống Lão Hóa</h1>
+    <p class="hero-intro">Trong kỷ nguyên của mỹ phẩm khoa học, việc tìm kiếm một bài review retinol chân thực giống như tìm kim đáy bể giữa hàng nghìn quảng cáo bóng bẩy. Retinol không chỉ là một trào lưu — nó là cuộc cách mạng sinh học cho làn da.</p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="meta-label">Cập nhật</span>
+        <span class="meta-value">Tháng 3, 2026</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <span class="meta-label">Thời gian đọc</span>
+        <span class="meta-value">10 phút</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <span class="meta-label">Cố vấn</span>
+        <span class="meta-value">Dr. Nguyễn Lan Anh</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="page-wrap">
+  <main class="main-content">
+
+    <!-- SECTION 1 -->
+    <section class="article-section reveal" id="section-1">
+      <div class="section-number">01 — Cơ Chế</div>
+      <h2 class="section-title">Cơ Chế Sinh Học Đằng Sau Khả Năng "Đảo Ngược" Thời Gian</h2>
+      <div class="section-rule"></div>
+      <p>Để hiểu tại sao mọi bài <strong>review retinol</strong> đều ca ngợi hoạt chất này, chúng ta cần nhìn vào cách nó tương tác với tế bào da ở cấp độ phân tử. Khác với các dưỡng chất thông thường chỉ tác động bề mặt, Retinol — một dẫn xuất của Vitamin A — có khả năng thẩm thấu sâu vào lớp biểu bì và thực sự thay đổi hành vi của tế bào.</p>
+      <div class="mechanism-cards">
+        <div class="mech-card">
+          <div class="mech-num">1</div>
+          <div class="mech-content">
+            <h4>Tăng tốc độ luân chuyển tế bào (Cell Turnover)</h4>
+            <p>Thông thường, da mất 28 ngày để tái tạo hoàn toàn. Retinol rút ngắn chu kỳ này, đẩy các tế bào mới khỏe mạnh lên bề mặt nhanh hơn, giúp mờ thâm và đều màu da tự nhiên.</p>
+          </div>
+        </div>
+        <div class="mech-card">
+          <div class="mech-num">2</div>
+          <div class="mech-content">
+            <h4>Kích thích tổng hợp Collagen &amp; Elastin</h4>
+            <p>Hoạt động như một "tổng chỉ huy", Retinol ra lệnh cho các nguyên bào sợi (fibroblasts) sản sinh thêm mạng lưới nâng đỡ da, giúp làm mờ nếp nhăn từ sâu bên trong.</p>
+          </div>
+        </div>
+        <div class="mech-card">
+          <div class="mech-num">3</div>
+          <div class="mech-content">
+            <h4>Ức chế Enzyme Tyrosinase</h4>
+            <p>Giúp làm mờ các đốm sắc tố, nám, tàn nhang — cho làn da đều màu và sáng mịn hơn rõ rệt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="citation-note">
+        <strong>Nguồn tham khảo khoa học:</strong> Mukherjee S. et al. (2006). "Retinoids in the treatment of skin aging". Clinical Interventions in Aging. | Kligman AM (1986). "The growing importance of topical retinoids". JAAD.
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="article-section reveal" id="section-2">
+      <div class="section-number">02 — Thách Thức</div>
+      <h2 class="section-title">Những Thách Thức Khi Đưa Retinol Vào Routine Skincare</h2>
+      <div class="section-rule"></div>
+      <p>Dù mạnh mẽ, điều mà ít bài review retinol nào nói thẳng là hiện tượng <strong>"Retinol Burn"</strong> — khi hàng rào bảo vệ da (skin barrier) bị tổn thương do dùng sai nồng độ hoặc tần suất quá cao.</p>
+      <div class="challenge-box">
+        <h4>3 thách thức lâm sàng thường gặp khi dùng Retinol</h4>
+        <ul class="challenge-list">
+          <li><strong>Mất nước xuyên biểu bì (TEWL):</strong> Retinol làm mỏng lớp sừng tạm thời, khiến da mất ẩm nhanh chóng, dẫn đến cảm giác căng khô và bong tróc.</li>
+          <li><strong>Độ nhạy cảm tăng cao:</strong> Da trở nên mỏng manh hơn với tác động ngoại lai như ô nhiễm và tia UV — đây là lý do kem chống nắng buổi sáng là <strong>BẮT BUỘC</strong>.</li>
+          <li><strong>Khả năng dung nạp cá nhân:</strong> Mỗi người có "ngưỡng chịu đựng" khác nhau. Người da nhạy cảm cần bắt đầu từ nồng độ cực thấp (0.01–0.025%) và tần suất 1–2 lần/tuần.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="article-section reveal" id="section-3">
+      <div class="section-number">03 — Sản Phẩm</div>
+      <h2 class="section-title">Review Retinol Kiehl's Micro-Dose: Công Nghệ Xoay Chuyển Cuộc Chơi</h2>
+      <div class="section-rule"></div>
+      <p>Sau hơn 170 năm nghiên cứu dược mỹ phẩm, Kiehl's đã giới thiệu <strong>Retinol Skin-Renewing Daily Micro-Dose Serum</strong> — một sản phẩm định nghĩa lại khái niệm "retinol an toàn" theo nghĩa lâm sàng.</p>
+      <p>Thay vì cung cấp một lượng lớn retinol nồng độ cao khiến da bị "ngợp", Kiehl's ứng dụng công nghệ Micro-Dose — kiểm soát lượng hoạt chất giải phóng vừa đủ để kích thích tái tạo tế bào mà không phá vỡ hàng rào bảo vệ da.</p>
+      <div class="product-spotlight">
+        <div class="product-badge">Kiehl's Since 1851</div>
+        <h3>Retinol Skin-Renewing<br>Daily Micro-Dose Serum</h3>
+        <p>Công nghệ giải phóng hoạt chất chính xác đến từng micromet — hiệu quả tối đa, kích ứng tối thiểu.</p>
+        <div class="ingredient-trio">
+          <div class="ingredient-card">
+            <div class="ingredient-icon">R</div>
+            <h5>Retinol</h5>
+            <p>Hiệu quả tối đa trên nếp nhăn và kết cấu da</p>
+          </div>
+          <div class="ingredient-card">
+            <div class="ingredient-icon">C</div>
+            <h5>Ceramides</h5>
+            <p>Gắn kết tế bào, ngăn khô da sau retinol</p>
+          </div>
+          <div class="ingredient-card">
+            <div class="ingredient-icon">P</div>
+            <h5>Peptide</h5>
+            <p>Tăng cường cấu trúc lớp biểu bì</p>
+          </div>
+        </div>
+        <div class="rating-block">
+          <div class="stars">★★★★★</div>
+          <div class="rating-score">4.7</div>
+          <div class="rating-info">
+            <strong style="color: var(--cream); font-size: 13px;">Đánh giá từ người dùng thực tế</strong>
+            <small>2.300+ reviews trên kiehls.com</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="article-section reveal" id="section-4">
+      <div class="section-number">04 — Kết Quả</div>
+      <h2 class="section-title">Hành Trình 8 Tuần Sử Dụng Thực Tế</h2>
+      <div class="section-rule"></div>
+      <p>Ghi nhận từ người dùng thực tế, <em>da hỗn hợp thiên khô, 34 tuổi, Hà Nội — Bắt đầu từ tháng 1/2026</em>.</p>
+      <div class="journey-table-wrap">
+        <table class="journey-table">
+          <thead>
+            <tr>
+              <th>Giai đoạn</th>
+              <th>Tình trạng da</th>
+              <th>Nhận xét chi tiết</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="week-badge">Tuần 1–2</span></td>
+              <td>Không kích ứng, không bong tróc</td>
+              <td>Kết cấu serum nhẹ, thấm nhanh. Da cảm giác ẩm mướt ngay sau khi thoa.</td>
+            </tr>
+            <tr>
+              <td><span class="week-badge">Tuần 3–4</span></td>
+              <td>Da bắt đầu có "glow" tự nhiên</td>
+              <td>Lỗ chân lông vùng cánh mũi nhỏ hơn. Kết cấu da mịn màng hơn rõ rệt.</td>
+            </tr>
+            <tr>
+              <td><span class="week-badge">Tuần 5–6</span></td>
+              <td>Tone da đều hơn</td>
+              <td>Thâm sau mụn bắt đầu mờ. Da khô mùa đông không còn là vấn đề nhờ ceramide.</td>
+            </tr>
+            <tr>
+              <td><span class="week-badge">Tuần 7–8</span></td>
+              <td>Nếp nhăn nông mờ đi</td>
+              <td>Vùng khóe mắt có cải thiện rõ. Kiên trì được đền đáp — đây là điểm khác biệt của micro-dose.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="article-section reveal" id="section-5">
+      <div class="section-number">05 — So Sánh</div>
+      <h2 class="section-title">So Sánh Các Dạng Retinoid: Chọn Đúng Cho Làn Da</h2>
+      <div class="section-rule"></div>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Dạng Retinoid</th>
+              <th>Hiệu lực</th>
+              <th>Khả năng kích ứng</th>
+              <th>Phù hợp với</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Retinyl Palmitate</strong></td>
+              <td>Nhẹ nhất</td>
+              <td><span class="pill-low">Rất thấp</span></td>
+              <td>Da cực nhạy, người mới bắt đầu</td>
+            </tr>
+            <tr>
+              <td><strong>Retinol (0.01–1%)</strong></td>
+              <td>Trung bình</td>
+              <td><span class="pill-mid">Vừa phải</span></td>
+              <td>Hầu hết các loại da — OTC</td>
+            </tr>
+            <tr>
+              <td><strong>Retinaldehyde</strong></td>
+              <td>Khá mạnh</td>
+              <td><span class="pill-mid">Trung bình</span></td>
+              <td>Da đã quen với retinol</td>
+            </tr>
+            <tr>
+              <td><strong>Tretinoin (Rx)</strong></td>
+              <td>Mạnh nhất</td>
+              <td><span class="pill-high">Cao</span></td>
+              <td>Cần kê đơn bác sĩ da liễu</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section class="article-section reveal" id="section-6">
+      <div class="section-number">06 — Routine</div>
+      <h2 class="section-title">Skincare Routine Chuẩn: Quy Tắc "Bảo Vệ – Đặc Trị – Phục Hồi"</h2>
+      <div class="section-rule"></div>
+      <p>Hiệu quả của retinol phụ thuộc 50% vào sản phẩm và 50% vào cách bạn xây dựng routine xung quanh nó. Dưới đây là khung routine được các chuyên gia da liễu khuyến nghị:</p>
+      <div class="routine-grid">
+        <div class="routine-card">
+          <div class="routine-header routine-am">☀ Buổi Sáng (AM)</div>
+          <div class="routine-steps">
+            <div class="routine-step"><span class="step-n gold">1</span>Sữa rửa mặt dịu nhẹ (pH 4.5–5.5)</div>
+            <div class="routine-step"><span class="step-n gold">2</span>Toner cấp ẩm (Hyaluronic Acid)</div>
+            <div class="routine-step"><span class="step-n gold">3</span>Vitamin C Serum (chống oxy hóa)</div>
+            <div class="routine-step"><span class="step-n gold">4</span>Kem dưỡng ẩm mỏng nhẹ</div>
+            <div class="routine-step"><span class="step-n gold">5</span><span class="step-highlight">Kem chống nắng SPF 30+ (BẮT BUỘC)</span></div>
+          </div>
+        </div>
+        <div class="routine-card">
+          <div class="routine-header routine-pm">🌙 Buổi Tối (PM)</div>
+          <div class="routine-steps">
+            <div class="routine-step"><span class="step-n">1</span>Tẩy trang + Sữa rửa mặt</div>
+            <div class="routine-step"><span class="step-n">2</span>Toner cân bằng pH</div>
+            <div class="routine-step"><span class="step-n">3</span><span class="step-highlight">Kiehl's Retinol Micro-Dose Serum</span></div>
+            <div class="routine-step"><span class="step-n">4</span>Kem dưỡng phục hồi (Barrier Cream)</div>
+            <div class="routine-step"><span class="step-n">5</span>Dầu dưỡng khóa ẩm (nếu da khô)</div>
+          </div>
+        </div>
+      </div>
+      <div class="warning-note">
+        ⚠ <strong>Kỹ thuật "Sandwich":</strong> Khi mới bắt đầu với retinol, thoa một lớp kem dưỡng ẩm mỏng TRƯỚC, sau đó mới thoa retinol, rồi dưỡng ẩm lại bên trên. Với Kiehl's Micro-Dose, bạn có thể thoa trực tiếp vì sản phẩm đã tích hợp sẵn ceramide và peptide phục hồi barrier.
+      </div>
+    </section>
+
+    <!-- SECTION 7 -->
+    <section class="article-section reveal" id="section-7">
+      <div class="section-number">07 — Kết Hợp</div>
+      <h2 class="section-title">"Kẻ Thù" Của Retinol: Những Thành Phần Tuyệt Đối Không Kết Hợp Cùng Buổi</h2>
+      <div class="section-rule"></div>
+      <div class="incompat-table-wrap">
+        <table class="incompat-table">
+          <thead>
+            <tr>
+              <th>Thành phần</th>
+              <th>Lý do tránh</th>
+              <th>Giải pháp thông minh</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>AHA/BHA (Acids)</strong></td>
+              <td><span class="x-mark">✗</span> pH xung đột, kích ứng mạnh, tăng TEWL</td>
+              <td>Dùng xen kẽ: Acids buổi sáng — Retinol buổi tối</td>
+            </tr>
+            <tr>
+              <td><strong>Vitamin C (Ascorbic Acid)</strong></td>
+              <td><span class="tilde-mark">~</span> Mất ổn định ở pH cao, retinol bị phân hủy</td>
+              <td>Vitamin C sáng (antioxidant) + Retinol tối (repair)</td>
+            </tr>
+            <tr>
+              <td><strong>Benzoyl Peroxide</strong></td>
+              <td><span class="x-mark">✗</span> Oxy hóa và phân hủy phân tử retinol</td>
+              <td>Tách hoàn toàn các buổi sử dụng</td>
+            </tr>
+            <tr>
+              <td><strong>Niacinamide liều cao (&gt;10%)</strong></td>
+              <td><span class="tilde-mark">~</span> Có thể gây đỏ và kích ứng nhẹ</td>
+              <td>Dùng xen kẽ bước hoặc chọn nồng độ 2–5%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 8 -->
+    <section class="article-section reveal" id="section-8">
+      <div class="section-number">08 — FAQ</div>
+      <h2 class="section-title">Những Câu Hỏi Chuyên Sâu Về Review Retinol</h2>
+      <div class="section-rule"></div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Retinol có thực sự làm mỏng da không?</div>
+          <div class="faq-a">Đây là hiểu lầm phổ biến nhất. Retinol làm mỏng lớp sừng (lớp tế bào chết trên cùng), nhưng lại làm DÀY lớp biểu bì sâu bên dưới bằng cách tăng sinh tế bào. Kết quả thực tế: da khỏe hơn, dày hơn và đàn hồi tốt hơn sau sử dụng dài hạn.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">"Retinol Purging" có phải điều bình thường không?</div>
+          <div class="faq-a">Có. Trong 2–4 tuần đầu, retinol đẩy nhanh chu kỳ tế bào, khiến mụn ẩn bên dưới trồi lên bề mặt nhanh hơn. Đây là dấu hiệu sản phẩm đang hoạt động đúng. Phân biệt với kích ứng thật: purging thường xuất hiện ở vùng hay mụn, không gây đỏ toàn mặt hay rát bỏng.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Retinol có dùng được khi mang thai không?</div>
+          <div class="faq-a"><strong>Không.</strong> Tất cả các dạng retinoid — bao gồm retinol không kê đơn — đều được khuyến cáo tránh trong thai kỳ và cho con bú. Thay thế an toàn: Bakuchiol (chiết xuất thực vật) có cơ chế tương tự nhưng không có nguy cơ với thai nhi.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="article-section reveal" id="section-conclusion">
+      <div class="section-number">Kết Luận</div>
+      <h2 class="section-title">Đầu Tư Thông Minh Nhất Cho Làn Da Của Bạn</h2>
+      <div class="section-rule"></div>
+      <div class="conclusion-block">
+        <blockquote>Không có thành phần skincare nào được khoa học chứng minh nhiều bằng retinol trong hơn 50 năm qua. Sai lầm lớn nhất không phải là dùng retinol — mà là dùng sai cách, sai nồng độ, và kỳ vọng kết quả ngay lập tức.</blockquote>
+        <p>Sự xuất hiện của <strong>Kiehl's Retinol Skin-Renewing Daily Micro-Dose</strong> đã định nghĩa lại câu hỏi không còn là "Có nên dùng retinol không?" mà là "Làm thế nào để retinol hoạt động hiệu quả nhất với làn da của tôi?".</p>
+        <p>Với công thức micro-dose kết hợp ceramide và peptide, đây là câu trả lời được hàng triệu người dùng toàn cầu và cộng đồng da liễu tin tưởng. Hành trình tìm kiếm vẻ đẹp không tuổi bắt đầu từ những lựa chọn thông thái — và kiên trì mỗi ngày.</p>
+      </div>
+    </section>
+
+    <!-- AUTHOR BIO -->
+    <div class="author-bio reveal">
+      <div class="author-bio-inner">
+        <div class="author-bio-header">
+          <div class="author-bio-avatar">NLA</div>
+          <div class="author-bio-info">
+            <div class="author-bio-name">Dr. Nguyễn Lan Anh</div>
+            <div class="author-bio-title">Chuyên gia Da liễu — Thẩm mỹ Da</div>
+            <div class="author-bio-badges">
+              <span class="bio-badge">✓ Đã xác minh</span>
+              <span class="bio-badge-outline">MD · Da liễu</span>
+              <span class="bio-badge-outline">12+ năm kinh nghiệm</span>
+            </div>
+          </div>
+        </div>
+        <div class="author-bio-divider"></div>
+        <p class="author-bio-desc">Dr. Nguyễn Lan Anh tốt nghiệp chuyên ngành Da liễu tại Đại học Y Hà Nội và hoàn thành chương trình đào tạo sau đại học tại Bệnh viện Da liễu Trung ương. Với hơn 12 năm thực hành lâm sàng, bà là tác giả của hơn 20 công trình nghiên cứu về chăm sóc da và lão hóa, đồng thời là thành viên của <em>Hội Da liễu Việt Nam</em> và <em>International Society of Dermatology</em>.</p>
+        <div class="author-bio-stats">
+          <div class="bio-stat">
+            <span class="bio-stat-num">12+</span>
+            <span class="bio-stat-label">Năm kinh nghiệm</span>
+          </div>
+          <div class="bio-stat-divider"></div>
+          <div class="bio-stat">
+            <span class="bio-stat-num">20+</span>
+            <span class="bio-stat-label">Nghiên cứu công bố</span>
+          </div>
+          <div class="bio-stat-divider"></div>
+          <div class="bio-stat">
+            <span class="bio-stat-num">5.000+</span>
+            <span class="bio-stat-label">Bệnh nhân tư vấn</span>
+          </div>
+        </div>
+        <div class="author-bio-footer">
+          <span class="bio-footer-label">Chuyên môn:</span>
+          <span class="bio-specialty">Chống lão hóa</span>
+          <span class="bio-specialty">Trị nám &amp; sắc tố</span>
+          <span class="bio-specialty">Phục hồi da barrier</span>
+          <span class="bio-specialty">Retinoid therapy</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-block">
+      <div class="sidebar-header">Mục lục</div>
+      <div class="sidebar-body">
+        <ul class="toc-list">
+          <li><a href="#section-1"><span class="toc-n">01</span>Cơ chế sinh học</a></li>
+          <li><a href="#section-2"><span class="toc-n">02</span>Thách thức khi dùng</a></li>
+          <li><a href="#section-3"><span class="toc-n">03</span>Kiehl's Micro-Dose</a></li>
+          <li><a href="#section-4"><span class="toc-n">04</span>Hành trình 8 tuần</a></li>
+          <li><a href="#section-5"><span class="toc-n">05</span>So sánh retinoid</a></li>
+          <li><a href="#section-6"><span class="toc-n">06</span>Routine chuẩn</a></li>
+          <li><a href="#section-7"><span class="toc-n">07</span>Kết hợp sai lầm</a></li>
+          <li><a href="#section-8"><span class="toc-n">08</span>FAQ chuyên sâu</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar-product">
+      <div class="sidebar-product-img">
+        <div class="product-visual">
+          <div class="product-visual-text">KIEHL'S</div>
+          <div class="product-visual-band"></div>
+          <div class="product-visual-text" style="font-size:7px; font-style:normal; font-family: var(--sans); letter-spacing: 0.05em;">RETINOL<br>MICRO-DOSE</div>
+        </div>
+      </div>
+      <div class="sidebar-product-body">
+        <h4>Retinol Skin-Renewing Daily Micro-Dose Serum</h4>
+        <p>Công nghệ micro-dose — hiệu quả tối đa, kích ứng tối thiểu. Phù hợp dùng hàng ngày.</p>
+        <a href="#" class="sidebar-btn">Xem sản phẩm</a>
+      </div>
+    </div>
+
+    <div class="sidebar-block" style="margin-top: 24px;">
+      <div class="sidebar-header">Quick Facts</div>
+      <div class="sidebar-body">
+        <div class="fact-row">
+          <span class="fact-label">Đánh giá người dùng</span>
+          <span class="fact-value stars-s">★★★★★ 4.7</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Phù hợp da</span>
+          <span class="fact-value green">Mọi loại da</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Tần suất khuyến nghị</span>
+          <span class="fact-value">Hàng ngày (PM)</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Thấy kết quả sau</span>
+          <span class="fact-value">3–4 tuần</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Thương hiệu</span>
+          <span class="fact-value">Kiehl's Since 1851</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="data:image/png;base64,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vvsueCI+8cQT2LVrl+JFk2MeuTTemTNn4HK50LlzZ6ijA2w2G/34448iZEhd01RWdYcNGwYAmDFjBmTD/fjx49G5c2fFd9cD4SoZderUCYFAQEhPLBn5fD5kZmZi+vTpePXVV3HkyBFBuufPn8e3336LY8eOiQnKUu0//vEPJCUlhV1IZIdSeUU+1M6/cEVewtl2o6KiRNnCJ554AgMGDEDTpk0r5d2988474XA4FHZHr9eLiRMngrO4+vXrh7fffhubNm3Chg0b8MUXX6B79+4h+fXct4iICHr88cfFgsV22hMnToB3tGVpPjo6mg4ePKiImHj88cch25vl8eBrqmOF5XuuWrUqffbZZ2JxDAaDOHTokJBS5fPLg3x/a9asAQA0atRIsXiUh2rVqtG+ffvg9Xrx6KOPIjo6mo4fP47169dXiNyrVKlCGzduhN/vR3FxMdLS0vDCCy8oFu/yIL8zXL6xf//+lV5Y/uvADy85OVnhhXzhhReQnJwcNtRI/iw/vGHDhiEQCGDVqlWQpdqyBslsNtODDz6IBQsW4N5770VeXh4cDodI9XvuueewdetWqKVTWfJ48MEHAZSWqLv55psVqidft27dugrpSj2p+e8RI0YAAD766COkpKRQ06ZNqWvXrjh06FCIp/t6QD2e8fHxtGfPnpANAjmU6YMPPkCbNm2oWbNmdN999ylSYDm2srCwECdPnsTcuXORkJBwTQKTCUEOiatRowbVr1+fWrZsSfXr16emTZsS57Srnz3/z07BDh060NKlS4WDzOfziWB6t9uN7777DnXq1BGOG5lAeFcBo9FIiYmJlJmZqdjlAAAOHz4Mzla7dOmSInZWzjYbM2aMQsthJCQk0I8//qgoIuPxeDBp0iTI0R/smGI4HA5FVX82Z6ivIb97ckggh589/fTTwvnI/c3Ozhbmr4pCfg6rV6+G1+tFixYtxPhVBOPHj0dRURF8Ph8uX76MvXv3VrguQWxsLE2bNg2bN29GZmam0CIef/zxCpkP5IiFt99+Gx6PB0OHDr2xd01gouGXo1GjRrR582a43W44HA5s2bIF9957L9TSnfwiscpFVLovEQD88MMPCklVnRYopwwOGTIE7777LhITE2nevHkoKirCuXPncOutt9LTTz+N3bt3K6RP2ctMdJUIf/vtN4SzlaonbDipl6j0wT700EPw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" alt="Kiehl's" class="footer-logo-img">
+        <p>Nội dung được kiểm duyệt bởi chuyên gia da liễu. Thông tin chỉ mang tính chất tham khảo, không thay thế tư vấn y tế chuyên nghiệp.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Chuyên mục</h4>
+        <a href="#">Skincare Khoa Học</a>
+        <a href="#">Review Sản Phẩm</a>
+        <a href="#">Routine Builder</a>
+        <a href="#">Hỏi Chuyên Gia</a>
+      </div>
+      <div class="footer-links">
+        <h4>Thương hiệu</h4>
+        <a href="#">Kiehl's</a>
+        <a href="#">La Roche-Posay</a>
+        <a href="#">The Ordinary</a>
+        <a href="#">Paula's Choice</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SkinLab Science &amp; Beauty Review. Tất cả quyền được bảo lưu.</p>
+      <p>Cố vấn: Dr. Nguyễn Lan Anh · SkinLab Research Team</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrollTop = doc.scrollTop || document.body.scrollTop;
+    const scrollHeight = doc.scrollHeight - doc.clientHeight;
+    const progress = (scrollTop / scrollHeight) * 100;
+    document.getElementById('progressBar').style.width = progress + '%';
+  });
+
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(r => observer.observe(r));
+
+  function toggleFaq(el) {
+    el.parentElement.classList.toggle('open');
+  }
+</script>
+</body>
+</html>
